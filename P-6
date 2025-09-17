@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double initial, final;
+    cout << "Enter initial meter reading: ";
+    cin >> initial;
+    cout << "Enter final meter reading: ";
+    cin >> final;
+
+    double units = final - initial;
+    double bill = units * 5; // assume Rs.5 per unit (adjust as required)
+
+    cout << "Electricity Bill = Rs." << bill << endl;
+    return 0;
+}

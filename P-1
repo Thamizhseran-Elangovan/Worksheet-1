@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double start, end;
+    cout << "MILEAGE REMUNERATION CALCULATOR\n";
+    cout << "Enter beginning odometer reading: ";
+    cin >> start;
+    cout << "Enter ending odometer reading: ";
+    cin >> end;
+
+    double miles = end - start;
+    double remuneration = miles * 25;
+
+    cout << "You travelled " << miles << " miles. At Rs.25 per mile, "
+         << "your remuneration is Rs." << remuneration << endl;
+
+    return 0;
+}

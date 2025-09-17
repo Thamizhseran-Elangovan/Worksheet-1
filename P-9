@@ -1,0 +1,20 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    double value;
+    cout << "Enter assessed property value: ";
+    cin >> value;
+
+    double taxable = value * 0.92;
+    double taxRate = 1.05;
+    double tax = (taxable / 100) * taxRate;
+
+    cout << left << setw(25) << "Assessed Value:" << right << setw(10) << fixed << setprecision(2) << value << endl;
+    cout << left << setw(25) << "Taxable Amount:" << right << setw(10) << taxable << endl;
+    cout << left << setw(25) << "Tax Rate for each Rs. 100.00" << right << setw(10) << taxRate << endl;
+    cout << left << setw(25) << "Property Tax" << right << setw(10) << tax << endl;
+
+    return 0;
+}

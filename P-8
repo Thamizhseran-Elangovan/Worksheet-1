@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num, steps = 0;
+    cout << "Enter a number: ";
+    cin >> num;
+
+    int root = num;
+    while (root >= 10) {
+        int sum = 0;
+        while (root > 0) {
+            sum += root % 10;
+            root /= 10;
+        }
+        root = sum;
+        steps++;
+    }
+
+    cout << "Digital Root = " << root << " obtained in " << steps << " steps" << endl;
+    return 0;
+}

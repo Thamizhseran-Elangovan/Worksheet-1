@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double km;
+    cout << "Enter the distance between two cities (km): ";
+    cin >> km;
+
+    double miles = km * 0.621371;
+    double feet = km * 3280.84;
+
+    cout << "The distance is " << km << " km or " << miles << " miles or " 
+         << feet << " foot." << endl;
+
+    return 0;
+}
